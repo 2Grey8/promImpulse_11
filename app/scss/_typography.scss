@@ -1,0 +1,90 @@
+.header{
+  &__item{
+    font-family: "TT Norms";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #000000;
+  }
+
+  &__contact{
+    font-family: "TT Norms";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+
+    span{
+      font-size: 14px;
+      line-height: 17px;
+      color: #8C94A6;
+    }
+  }
+
+  &__title{
+    font-family: "TT Norms";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 54px;
+    line-height: 150%;
+    color: #FFFFFF;
+  }
+
+  &__text{
+    font-family: "TT Norms";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 150%;
+    color: #CFCFCF;
+  }
+
+  &__box{
+    font-family: "TT Norms";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+
+    span{
+      font-weight: normal;
+      font-size: 14px;
+      color: #C9C9C9;
+    }
+  }
+}
+
+.news{
+  &-title{
+    font-family: "TT Norms";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 150%;
+    color: #118BDD;
+  }
+
+  &-text{
+    font-family: "TT Norms";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 180%;
+    color: #434343;
+  }
+
+  &__date{
+    font-family: "TT Norms";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+}

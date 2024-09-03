@@ -1,0 +1,279 @@
+.news{
+  width: 192rem;
+
+  &__inner{
+    display: block;
+    width: 192rem;
+    margin: 0 auto;
+    margin-bottom: 12rem;
+
+    @include respond(phone){
+      width: 60rem;
+    }
+
+    @include respond(port){
+      width: 90rem;
+    }
+
+    @include respond(land){
+      width: 120rem;
+    }
+  }
+
+  &__title{
+    display: block;
+    width: 18.8rem;
+  }
+
+  &__btn{
+    display: block;
+    width: 13rem;
+  }
+
+  &__group{
+    display: block;
+    width: 138rem;
+    margin: 0 auto;
+
+    @include respond(phone){
+      width: 60rem;
+    }
+
+    @include respond(port){
+      width: 90rem;
+    }
+
+    @include respond(land){
+      width: 120rem;
+    }
+  }
+
+  .wrapper{
+    margin: 0 auto;
+  }
+
+  .tabs-triggers{
+    width: 360px;
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    position: relative;
+  }
+
+  .tabs-content{
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+
+  .tabs-triggers__item{
+    width: 50px;
+    height: 50px;
+    padding-top: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    border: 1px solid #DBDBDB;
+  }
+
+  .tabs-triggers__item_active{
+    background: #118BDD;
+    color: #fff;
+  }
+
+  .tabs-content__item{
+    display: none;
+    padding: 20px;
+  }
+
+  .tabs-content__item_active{
+    display: block;
+  }
+
+  .tabs-button{
+    display: block;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #DBDBDB;
+    position: absolute;
+  }
+
+  .tabs-button:hover{
+    border: 1px solid #118BDD;
+  }
+
+  .tabs-button__prev{
+    top: 2837.2px;
+    left: 730px;
+
+    @include respond(phone){
+      top: 1589px;
+      left: 538px;
+    }
+
+    @include respond(port){
+      top: 2029px;
+      left: 538px;
+    }
+
+    @include respond(land){
+      top: 2756px;
+      left: 634px;
+    }
+  }
+
+  .tabs-button__next{
+    top: 2837.2px;
+    left: 1030px;
+
+    @include respond(phone){
+      top: 1589px;
+      left: 838px;
+    }
+
+    @include respond(port){
+      top: 2029px;
+      left: 838px;
+    }
+
+    @include respond(land){
+      top: 2756px;
+      left: 934px;
+    }
+  }
+
+  &__container{
+    width: 138rem;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    display: block;
+    position: relative;
+
+    @include respond(phone){
+      width: 60rem;
+    }
+
+    @include respond(port){
+      width: 90rem;
+    }
+
+    @include respond(land){
+      width: 120rem;
+    }
+  }
+
+  &__img{
+    display: block;
+    margin: 0 auto;
+    width: 138rem;
+
+    @include respond(phone){
+      width: 60rem;
+      margin-bottom: 13rem;
+    }
+
+    @include respond(port){
+      width: 90rem;
+      margin-bottom: 13rem;
+    }
+
+    @include respond(land){
+      width: 120rem;
+      margin-bottom: 13rem;
+    }
+  }
+
+  &__box{
+    display: block;
+    width: 81.7rem;
+    padding-top: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 4.5rem;
+    background: #FAFAFA;
+    position: absolute;
+    top: 37.1rem;
+
+    @include respond(phone){
+      width: 60rem;
+      top: 22rem;
+    }
+
+    @include respond(port){
+      width: 90rem;
+      top: 32rem;
+    }
+
+    @include respond(land){
+      width: 120rem;
+      top: 43.5rem;
+      text-align: center;
+    }
+
+    &-title{
+      display: block;
+      width: 44rem;
+      margin-bottom: 2rem;
+      text-align: left;
+
+      @include respond(land){
+        width: 120rem;
+        text-align: center;
+      }
+    }
+
+    &-text{
+      display: block;
+      width: 44rem;
+      text-align: left;
+
+      @include respond(land){
+        width: 120rem;
+        text-align: center;
+      }
+    }
+  }
+
+  &__date{
+    display: block;
+    width: 21.2rem;
+    padding-top: 2.8rem;
+    padding-bottom: 2.8rem;
+    background: #118BDD;
+    position: absolute;
+    top: 42rem;
+    left: 81.7rem;
+
+    @include respond(phone){
+      width: 14rem;
+      padding-top: .6rem;
+      padding-bottom: .6rem;
+      padding-left: 2.8rem;
+      padding-right: 2.7rem;
+      text-align: center;
+      top: 17.5rem;
+      left: 46rem;
+    }
+
+    @include respond(port){
+      width: 14rem;
+      padding-top: 5.3rem;
+      padding-bottom: 5.3rem;
+      padding-left: 2.8rem;
+      padding-right: 2.7rem;
+      text-align: center;
+      top: 32rem;
+      left: 76rem;
+    }
+
+    @include respond(land){
+      width: 14rem;
+      padding-top: 5.3rem;
+      padding-bottom: 5.3rem;
+      padding-left: 2.8rem;
+      padding-right: 2.7rem;
+      text-align: center;
+      top: 30.2rem;
+      left: 106rem;
+    }
+  }
+}

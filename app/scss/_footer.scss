@@ -1,0 +1,146 @@
+.footer{
+  width: 192rem;
+
+  &__wrap{
+    width: 192rem;
+    display: block;
+    margin: 0 auto;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background: #0c0e16;
+
+    @include respond(phone){
+      display: block;
+      width: 60rem;
+    }
+
+    @include respond(port){
+      width: 90rem;
+      display: block;
+      margin: 0 auto;
+    }
+
+    @include respond(land){
+      width: 120rem;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  &__inner{
+    width: 138rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid #464958;
+
+    @include respond(phone){
+      display: block;
+      width: 60rem;
+      margin: 0 auto;
+    }
+
+    @include respond(port){
+      width: 90rem;
+      display: flex;
+      margin: 0 auto;
+    }
+
+    @include respond(land){
+      width: 120rem;
+      display: flex;
+      margin: 0 auto;
+    }
+  }
+
+  &__logo{
+    display: block;
+    width: 111px;
+    height: 35px;
+  }
+
+  &__navigation,
+  &__props,
+  &__contact{
+    display: block;
+    width: 22rem;
+
+    font-family: "TT Norms";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+  }
+
+  &__navigation &__item{
+    cursor: default;
+
+    &:hover{
+      color: #118BDD;
+    }
+  }
+
+  &__contact{
+    text-align: left;
+  }
+
+  &__tel,
+  &__adress,
+  &__mail,
+  &__work{
+    margin-bottom: 2rem;
+  }
+
+  span{
+    display: block;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    color: #606269;
+  }
+
+  &__list{
+    list-style: none;
+    text-align: left;
+  }
+
+  &__item{
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  &__item_general{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    color: #606269;
+  }
+
+  &__footer{
+    width: 138rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+
+    @include respond(phone){
+      display: block;
+      width: 60rem;
+    }
+
+    @include respond(port){
+      width: 90rem;
+      display: flex;
+      margin: 0 auto;
+    }
+
+    @include respond(land){
+      width: 120rem;
+      display: flex;
+      margin: 0 auto;
+    }
+  }
+}

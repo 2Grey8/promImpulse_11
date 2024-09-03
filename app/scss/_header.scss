@@ -1,0 +1,239 @@
+.header{
+  width: 192rem;
+
+  &__wrap{
+    display: block;
+    width: 192rem;
+    height: 85rem;
+    margin: 0 auto;
+    margin-bottom: 12rem;
+    padding-top: 4.6rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../img/bgheader.png);
+
+    @include respond(phone){
+      width: 60rem;
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 7rem;
+    }
+
+    @include respond(port){
+      width: 90rem;
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 7rem;
+    }
+
+    @include respond(land){
+      width: 120rem;
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 7rem;
+    }
+  }
+
+  &__group{
+    width: 138rem;
+    margin: 0 auto;
+    margin-bottom: 21.3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include respond(phone){
+      width: 60rem;
+      justify-content: space-around;
+      margin-bottom: 2rem;
+    }
+
+    @include respond(port){
+      width: 90rem;
+      justify-content: space-around;
+      margin-bottom: 2rem;
+    }
+
+    @include respond(land){
+      width: 120rem;
+      justify-content: space-around;
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__logo{
+    display: block;
+    width: 8.5rem;
+    height: 2.68rem;
+  }
+
+  &__navigation{
+    width: 96rem;
+    display: block;
+
+    @include respond(phone){
+      width: 60rem;
+      display: none;
+    }
+
+    @include respond(port){
+      width: 90rem;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin-bottom: 2rem;
+    }
+
+    @include respond(land){
+      width: 120rem;
+      justify-content: space-around;
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__list{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+  }
+
+  &__contact{
+    display: block;
+    width: 13.8rem;
+    text-align: left;
+
+    @include respond(phone){
+      display: block;
+      width: 20rem;
+    }
+
+    @include respond(port){
+      display: block;
+      width: 20rem;
+    }
+
+    @include respond(land){
+      display: block;
+      width: 20rem;
+    }
+
+    span{
+      font-size: 14px;
+      line-height: 17px;
+      color: #8C94A6;
+    }
+  }
+
+  &__title{
+    display: block;
+    width: 79.7rem;
+    margin-left: 27rem;
+    margin-bottom: 2rem;
+    text-align: left;
+
+    @include respond(phone){
+      display: block;
+      width: 29rem;
+      margin: 0 auto;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    @include respond(port){
+      display: block;
+      width: 59rem;
+      margin: 0 auto;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+  }
+
+  &__text{
+    display: block;
+    width: 79.7rem;
+    margin-left: 27rem;
+    margin-bottom: 15rem;
+    text-align: left;
+
+    @include respond(phone){
+      display: block;
+      width: 59rem;
+      margin: 0 auto;
+      margin-bottom: 8rem;
+      text-align: center;
+    }
+
+    @include respond(port){
+      display: block;
+      width: 59rem;
+      margin: 0 auto;
+      margin-bottom: 8rem;
+      text-align: center;
+    }
+  }
+
+  &__inner{
+    width: 138rem;
+    margin: 0 auto;
+    padding-left: 3.5rem;
+    display: flex;
+    justify-content: space-between;
+
+    @include respond(phone){
+      display: flex;
+      margin: 0 auto;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    @include respond(port){
+      display: flex;
+      margin: 0 auto;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+  }
+
+  &__box{
+    display: block;
+    width: 29rem;
+    text-align: left;
+    position: relative;
+
+    &::after{
+      content: "";
+      display: block;
+      width: 3rem;
+      height: 3rem;
+      background-size: cover;
+      position: absolute;
+      top: .5rem;
+      left: -4rem;
+
+      @include respond(phone){
+        top: -5rem;
+        left: 7rem;
+      }
+    }
+
+    &_1::after{
+      background-image: url(../img/icon1.png);
+    }
+
+    &_2::after{
+      background-image: url(../img/icon2.png);
+    }
+
+    &_3::after{
+      background-image: url(../img/icon3.png);
+    }
+
+    &_4::after{
+      background-image: url(../img/icon4.png);
+    }
+
+    span{
+      display: block;
+      padding-top: .5rem;
+    }
+  }
+}
